@@ -21,7 +21,6 @@ services:
   - type: web
     name: document-disk-frontend
     env: static
-    plan: free # Adjust as needed
     buildCommand: cd frontend && yarn install && yarn build
     staticPublishPath: ./frontend/build
     envVars:
